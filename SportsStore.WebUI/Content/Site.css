@@ -1,61 +1,106 @@
-﻿body {
-    font-size: .85em;
-    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
-    color: #232323;
-    background-color: #fff;
+﻿BODY {
+    font-family: Cambria, Georgia, "Times New Roman";
+    margin: 0;
 }
 
-header, footer, nav, section {
-    display: block;
+DIV#header DIV.title, DIV.item H3, DIV.item H4, DIV.pager A {
+    font: bold 1em "Arial Narrow", "Franklin Gothic Medium", Arial;
 }
 
-
-/* Styles for basic forms
------------------------------------------------------------*/
-fieldset {
-    border: 1px solid #ddd;
-    padding: 0 1.4em 1.4em 1.4em;
-    margin: 0 0 1.5em 0;
+DIV#header {
+    background-color: #444;
+    border-bottom: 2px solid #111;
+    color: White;
 }
 
-legend {
-    font-size: 1.2em;
-    font-weight: bold;
+DIV#header DIV.title {
+    font-size: 2em;
+    padding: .6em;
 }
 
-textarea {
-    min-height: 75px;
+DIV#content {
+    border-left: 2px solid gray;
+    margin-left: 9em;
+    padding: 1em;
 }
 
-.editor-label {
-    margin: 1em 0 0 0;
+DIV#categories {
+    float: left;
+    width: 8em;
+    padding: .3em;
 }
 
-.editor-field {
-    margin: 0.5em 0 0 0;
+DIV.item {
+    border-top: 1px dotted gray;
+    padding-top: .7em;
+    margin-bottom: .7em;
+    186;
 }
 
-
-/* Styles for validation helpers
------------------------------------------------------------*/
-.field-validation-error {
-    color: #f00;
+DIV.item:first-child {
+    border-top: none;
+    padding-top: 0;
 }
 
-.field-validation-valid {
-    display: none;
+DIV.item H3 {
+    font-size: 1.3em;
+    margin: 0 0 .25em 0;
 }
 
-.input-validation-error {
-    border: 1px solid #f00;
-    background-color: #fee;
+DIV.item H4 {
+    font-size: 1.1em;
+    margin: .4em 0 0 0;
 }
 
-.validation-summary-errors {
-    font-weight: bold;
-    color: #f00;
+DIV.pager {
+    text-align: right;
+    border-top: 2px solid silver;
+    padding: .5em 0 0 0;
+    margin-top: 1em;
 }
 
-.validation-summary-valid {
-    display: none;
+DIV.pager A {
+    font-size: 1.1em;
+    color: #666;
+    text-decoration: none;
+    padding: 0 .4em 0 .4em;
+}
+
+DIV.pager A:hover {
+    background-color: Silver;
+}
+
+DIV.pager A.selected {
+    background-color: #353535;
+    color: White;
+}
+
+DIV#categories A {
+    font: bold 1.1em "Arial Narrow","Franklin Gothic Medium",Arial; display: block;
+    text-decoration: none; padding: .6em; color: Black;
+    border-bottom: 1px solid silver;
+}
+
+DIV#categories A.selected { 
+    background-color: #666; color: White;
+}
+
+DIV#categories A:hover { 
+    background-color: #CCC;
+}
+
+DIV#categories A.selected:hover { 
+    background-color: #666;
+}
+
+FORM { 
+    margin: 0; padding: 0;
+}
+
+DIV.item FORM { 
+    float:right;
+}
+
+DIV.item INPUT {
+    color:White; background-color: #333; border: 1px solid black; cursor:pointer;
 }
