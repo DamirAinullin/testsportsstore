@@ -40,7 +40,7 @@ namespace SportsStore.UnitTests
         }
 
         [TestMethod]
-        public void CanGeneratePAgeLinks()
+        public void CanGeneratePageLinks()
         {
             HtmlHelper myHelper = null;
             PagingInfo pagingInfo = new PagingInfo
